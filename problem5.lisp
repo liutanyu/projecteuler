@@ -1,0 +1,5 @@
+(defun a (i j)
+  (cond ((= i 21) j)
+       ((and (= (mod j i) 0) (< i 21))
+	(a (1+ i) j))
+       (t ( a 1 (1+ j)))))
